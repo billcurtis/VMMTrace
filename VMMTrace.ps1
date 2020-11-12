@@ -1,4 +1,4 @@
-# Quickly written script.  Put in the active VMMServer FQDN and execute script. :)
+# Quickly written script.  Put in the active VMMServer FQDN and execute script. 
 
 
 $ActiveVMMServer = "vmmnode1.wcurtis.net"
