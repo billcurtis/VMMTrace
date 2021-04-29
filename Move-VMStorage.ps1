@@ -22,15 +22,7 @@ function move-vmmStorage {
     $VM = Get-SCVirtualMachine -Name $VMName
     $VMHost = Get-SCVMHost -ID $VM.HostId
     
-    $params = @{
-    
-        VM     = $VM
-        Path   = $DestinationFileShare
-        VMHost = $VMHost
-    
-    }
-    
-    Move-SCVirtualMachine @params -UseLAN -RunAsynchronously
+    Move-SCVirtualMachine -VM -UseLAN -RunAsynchronously -VMHost $VMHost -Path $DestinationFileShare 
     
 }
     
