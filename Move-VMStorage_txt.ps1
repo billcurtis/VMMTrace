@@ -50,7 +50,7 @@ Write-Verbose "Destination File Share is: $($DestinationFileShare.SharePath)"
 foreach ($vmData in $vmDataSet.Computer) {
     
     Write-Verbose "Moving virtual machine: $($vmData)"
-    move-vmmStorage -VMName $vmData.Name -DestinationFileShare $DestinationFileShare.SharePath
+    move-vmmStorage -VMName $vmData -DestinationFileShare $DestinationFileShare.SharePath
     
 }
      
